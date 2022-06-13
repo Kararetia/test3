@@ -14,7 +14,6 @@ class FullScreenViewController: UIViewController {
     let countCells = 1
     let identifire = "FullScreenCell"
     var indexPath:IndexPath!
-  //  let offset:CGFloat = 2.0
 
     @IBOutlet weak var fullScreenCollectionView: UICollectionView!
     override func viewDidLoad() {
@@ -45,7 +44,6 @@ extension FullScreenViewController: UICollectionViewDataSource,UICollectionViewD
         let frameCV = collectionView.frame
         let widthCell = frameCV.width / CGFloat(countCells)
         let heightCell = widthCell
-        //let spacing = CGFloat((countCells + 1)) * offset / CGFloat(countCells)
         return CGSize(width: widthCell, height: heightCell)
     }
     
